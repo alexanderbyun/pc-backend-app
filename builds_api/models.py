@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Post(models.Model):
     name = models.CharField(max_length=32)
-    post = models.CharField(max_length=400)
+    post = models.CharField(max_length=255)
     cpu = models.CharField(max_length=32)
     cooler = models.CharField(max_length=32)
     mobo = models.CharField(max_length=32)

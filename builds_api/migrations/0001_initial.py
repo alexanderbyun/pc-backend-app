@@ -15,8 +15,8 @@ class Migration(migrations.Migration):
             name='Post',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('post', models.CharField(max_length=400)),
                 ('name', models.CharField(max_length=32)),
+                ('post', models.CharField(max_length=255)),
                 ('cpu', models.CharField(max_length=32)),
                 ('cooler', models.CharField(max_length=32)),
                 ('mobo', models.CharField(max_length=32)),
