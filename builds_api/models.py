@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Post(models.Model):
     name = models.CharField(max_length=32)
-    post = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
     cpu = models.CharField(max_length=32)
     cooler = models.CharField(max_length=32)
     mobo = models.CharField(max_length=32)
@@ -12,3 +12,4 @@ class Post(models.Model):
     gpu = models.CharField(max_length=32)
     storage = models.CharField(max_length=32)
     case = models.CharField(max_length=32)
+    img = models.CharField(max_length=200)

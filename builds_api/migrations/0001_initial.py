@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=32)),
-                ('post', models.CharField(max_length=255)),
+                ('description', models.CharField(max_length=255)),
                 ('cpu', models.CharField(max_length=32)),
                 ('cooler', models.CharField(max_length=32)),
                 ('mobo', models.CharField(max_length=32)),
@@ -25,6 +25,7 @@ class Migration(migrations.Migration):
                 ('gpu', models.CharField(max_length=32)),
                 ('storage', models.CharField(max_length=32)),
                 ('case', models.CharField(max_length=32)),
+                ('img', models.CharField(max_length=200)),
             ],
         ),
     ]
